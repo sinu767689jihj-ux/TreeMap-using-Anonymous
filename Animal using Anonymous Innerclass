@@ -1,0 +1,38 @@
+interface Animal
+{
+    void eat();
+    void breath();
+}
+class AnonymousDemo1
+{
+    public static void main(String[] args)
+    {
+        Animal d=new Animal()
+            {
+                //@Override
+                public void eat()
+                {
+                    System.out.println("Dog is Eating:");
+                }
+                //@override
+                public void breath()
+                {
+                    System.out.println("Dog is bavu bavuu");
+                }
+            };
+        Animal c=new Animal() {
+            public void eat()
+            {
+            System.out.println("Cat is Eating");
+        }
+        public void breath()
+        {
+            System.out.println("Cat is Breath");
+        }
+    };
+    d.eat();
+    d.breath();
+    c.eat();
+    c.breath();
+}
+}
